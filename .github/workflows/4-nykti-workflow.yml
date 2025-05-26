@@ -1,0 +1,15 @@
+name: Multi Job Workflow
+on:
+  push:
+    branch: 
+      - main
+jobs:
+  multi-job-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First step
+        run: |
+          echo "Hello World from Multi Job Workflow."
+          echo "This job runs on every push to the main branch."
+ 
