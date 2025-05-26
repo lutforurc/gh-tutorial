@@ -1,6 +1,8 @@
 name: First Workflow
+
 on: [push]
-  jobs: 
+
+jobs:
   first-workflow:
     runs-on: ubuntu-latest
     steps:
@@ -8,4 +10,3 @@ on: [push]
         run: |
           echo "Hello World."
           echo "Hello Bangladesh."
-  
