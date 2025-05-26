@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  first-workflow:
+  manual-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: First step
+      - name: Manual step
         run: |
-          echo "Hello World."
-          echo "Hello Bangladesh."
+          echo "Hello World from Manual Worksflow."
+          echo "Hello Bangladesh from Manual Worksflow."
