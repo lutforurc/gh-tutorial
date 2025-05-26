@@ -4,7 +4,7 @@ on:
     branch: 
       - main
 jobs:
-  multi-job-workflow:
+  first-job-workflow:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,3 +13,11 @@ jobs:
           echo "Hello World from Multi Job Workflow."
           echo "This job runs on every push to the main branch."
  
+    second-job-workflow:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Second step
+          run: |
+            echo "Hello World from Multi Job Workflow."
+            echo "This job runs on every push to the main branch."
